@@ -23,6 +23,9 @@
 		D85D9DAA2A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D9DA92A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift */; };
 		D865814E2A3EF4D20041F483 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865814D2A3EF4D20041F483 /* LogoImageView.swift */; };
 		D86581502A3F1C780041F483 /* TRCustomTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865814F2A3F1C780041F483 /* TRCustomTextFeild.swift */; };
+		D884A9502A432BB40003CB3A /* ApiCostannts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884A94F2A432BB40003CB3A /* ApiCostannts.swift */; };
+		D884A9522A432F7E0003CB3A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884A9512A432F7E0003CB3A /* ApiManager.swift */; };
+		D884A9542A4330E50003CB3A /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884A9532A4330E50003CB3A /* SignUpModel.swift */; };
 		D89493332A3DBFB300238E18 /* IconCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89493322A3DBFB300238E18 /* IconCustomButton.swift */; };
 		D89493352A3DF21100238E18 /* TackerizeEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89493342A3DF21100238E18 /* TackerizeEnums.swift */; };
 		D89493382A3DFCF200238E18 /* TracerizerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89493372A3DFCF200238E18 /* TracerizerConstants.swift */; };
@@ -55,6 +58,7 @@
 		D8C5A4132A38881C00B06C12 /* TRWelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5A4122A38881C00B06C12 /* TRWelcomeCoordinator.swift */; };
 		D8C5A4162A388E9C00B06C12 /* TRRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5A4152A388E9C00B06C12 /* TRRegisterViewController.swift */; };
 		D8C5A4182A38922300B06C12 /* TRResiter1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5A4172A38922300B06C12 /* TRResiter1Coordinator.swift */; };
+		D8F4568B2A4442EF009A6F61 /* TRSignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F4568A2A4442EF009A6F61 /* TRSignUpConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,9 @@
 		D85D9DA92A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSignUpCoordinator.swift; sourceTree = "<group>"; };
 		D865814D2A3EF4D20041F483 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
 		D865814F2A3F1C780041F483 /* TRCustomTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRCustomTextFeild.swift; sourceTree = "<group>"; };
+		D884A94F2A432BB40003CB3A /* ApiCostannts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCostannts.swift; sourceTree = "<group>"; };
+		D884A9512A432F7E0003CB3A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D884A9532A4330E50003CB3A /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		D89493322A3DBFB300238E18 /* IconCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCustomButton.swift; sourceTree = "<group>"; };
 		D89493342A3DF21100238E18 /* TackerizeEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TackerizeEnums.swift; sourceTree = "<group>"; };
 		D89493372A3DFCF200238E18 /* TracerizerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracerizerConstants.swift; sourceTree = "<group>"; };
@@ -105,6 +112,7 @@
 		D8C5A4122A38881C00B06C12 /* TRWelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRWelcomeCoordinator.swift; sourceTree = "<group>"; };
 		D8C5A4152A388E9C00B06C12 /* TRRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRRegisterViewController.swift; sourceTree = "<group>"; };
 		D8C5A4172A38922300B06C12 /* TRResiter1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRResiter1Coordinator.swift; sourceTree = "<group>"; };
+		D8F4568A2A4442EF009A6F61 /* TRSignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSignUpConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 		D8445A212A36EB45008B685C /* Trackerizer */ = {
 			isa = PBXGroup;
 			children = (
+				D884A94E2A432B900003CB3A /* API Manager */,
 				D85D9DAB2A3ADE0100A8B9B1 /* Modules */,
 				D8C5A40D2A38862300B06C12 /* Coordinators */,
 				D8C5A3E82A38499000B06C12 /* inter-cufonfonts */,
@@ -188,6 +197,8 @@
 				D85D9DA72A39AC1500A8B9B1 /* TRSignUpViewController.swift */,
 				D85D9DA92A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift */,
 				D81F53442A4186390024B6A9 /* TRSignUpViewModel.swift */,
+				D884A9532A4330E50003CB3A /* SignUpModel.swift */,
+				D8F4568A2A4442EF009A6F61 /* TRSignUpConstants.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -202,6 +213,15 @@
 				D81F53462A419A850024B6A9 /* Home */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		D884A94E2A432B900003CB3A /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D884A94F2A432BB40003CB3A /* ApiCostannts.swift */,
+				D884A9512A432F7E0003CB3A /* ApiManager.swift */,
+			);
+			path = "API Manager";
 			sourceTree = "<group>";
 		};
 		D89493362A3DFCB000238E18 /* Uitilites */ = {
@@ -375,6 +395,8 @@
 				D85D9DAA2A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift in Sources */,
 				D8445A272A36EB45008B685C /* TRWelcomeScreenViewController.swift in Sources */,
 				D894933D2A3E024400238E18 /* TRSignInCoordinator.swift in Sources */,
+				D884A9502A432BB40003CB3A /* ApiCostannts.swift in Sources */,
+				D884A9542A4330E50003CB3A /* SignUpModel.swift in Sources */,
 				D896EDCA2A4073F000588964 /* TRHomeCoordinator.swift in Sources */,
 				D8C5A4112A38866700B06C12 /* MainCoordinator.swift in Sources */,
 				D89493332A3DBFB300238E18 /* IconCustomButton.swift in Sources */,
@@ -382,8 +404,10 @@
 				D89996C62A371E2D0009FE19 /* IOComponent.swift in Sources */,
 				D896EDC82A4073BF00588964 /* TRHomeViewController.swift in Sources */,
 				D81F53432A4177BD0024B6A9 /* Extensions.swift in Sources */,
+				D884A9522A432F7E0003CB3A /* ApiManager.swift in Sources */,
 				D8C5A4162A388E9C00B06C12 /* TRRegisterViewController.swift in Sources */,
 				D86581502A3F1C780041F483 /* TRCustomTextFeild.swift in Sources */,
+				D8F4568B2A4442EF009A6F61 /* TRSignUpConstants.swift in Sources */,
 				D8C5A40F2A38863D00B06C12 /* Coordinator.swift in Sources */,
 				D8C5A4182A38922300B06C12 /* TRResiter1Coordinator.swift in Sources */,
 				D8C5A4132A38881C00B06C12 /* TRWelcomeCoordinator.swift in Sources */,

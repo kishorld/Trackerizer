@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 class TRWelcomeCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = [Coordinator]()
-    
     var navigationController: UINavigationController
     init (with navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -18,7 +17,6 @@ class TRWelcomeCoordinator: Coordinator {
     func start() {
         let welcomeVC = TRWelcomeScreenViewController()
         welcomeVC.trwelcomeCoordinator = self
-
         self.navigationController.pushViewController(welcomeVC, animated: true)
     }
     

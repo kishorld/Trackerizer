@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 class TRSignUpCoordinator: Coordinator {
-    var childCoordinator: [Coordinator] = []
+    var childCoordinators: [Coordinator] = [Coordinator]()
     
     var navigationController: UINavigationController
     init (with navigationController: UINavigationController) {
@@ -19,6 +19,13 @@ class TRSignUpCoordinator: Coordinator {
         let trSignUpVC = TRSignUpViewController()
         trSignUpVC.trSignUpCoordinator = self
         self.navigationController.pushViewController(trSignUpVC, animated: true)
+    }
+    
+    func navigateToSignIn() {
+        let signInCoordinator = TRSignInCoordinator(with: navigationController)
+
+        childCoordinators.append(signInCoordinator)
+        signInCoordinator.start()
     }
     
 }

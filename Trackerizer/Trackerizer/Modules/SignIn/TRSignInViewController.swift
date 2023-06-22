@@ -16,6 +16,7 @@ class TRSignInViewController: UIViewController {
         build()
         emailTextFeild.delegate = self
         passwordTextFeild.delegate = self
+        
         emailTextFeild.tag = 0
     }
     

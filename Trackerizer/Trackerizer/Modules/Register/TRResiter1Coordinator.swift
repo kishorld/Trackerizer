@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 class TRResiter1Coordinator: Coordinator {
-    var childCoordinator: [Coordinator] = []
+    var childCoordinators: [Coordinator] = [Coordinator]()
     
     var navigationController: UINavigationController
     init (with navigationController: UINavigationController) {
@@ -23,7 +23,7 @@ class TRResiter1Coordinator: Coordinator {
     
     func navigateToSignUpWithEmail() {
         let signUpCoordinator = TRSignUpCoordinator(with: navigationController)
-        childCoordinator.append(signUpCoordinator)
+        childCoordinators.append(signUpCoordinator)
         signUpCoordinator.start()
     }
     

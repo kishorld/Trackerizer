@@ -18,6 +18,16 @@ enum TrackerizerImageAssests {
     case trailingStyleIcon
     case Frameonboarding
     case checkMark
+    case oneDriveLogo
+    case spotifyLogo
+    case yTPremiumLogo
+    case date
+    case plus
+    case home
+    case calender
+    case spending
+    case cards
+    case setting
     
     var image: UIImage {
         switch self {
@@ -38,6 +48,26 @@ enum TrackerizerImageAssests {
             return UIImage(named: "Frameonboarding") ?? .add
         case .checkMark:
             return UIImage(named: "checkMark") ?? .add
+        case .oneDriveLogo:
+            return UIImage(named: "OneDriveLogo") ?? .add
+        case .spotifyLogo:
+            return UIImage(named: "SpotifyLogo") ?? .add
+        case .yTPremiumLogo:
+            return UIImage(named: "YTPremiumLogo") ?? .add
+        case .date:
+            return UIImage(named: "Date") ?? .add
+        case .plus:
+            return UIImage(named: "plus") ?? .add
+        case .home:
+            return UIImage(named: "home") ?? .add
+        case .calender:
+            return UIImage(named: "Calendar") ?? .add
+        case .spending:
+            return UIImage(named: "budgets") ?? .add
+        case .cards:
+            return UIImage(named: "creditCards") ?? .add
+        case .setting:
+            return UIImage(named: "Settings") ?? .add
         }
     }
 }
@@ -71,6 +101,12 @@ enum TrackerizerColorAssests {
     case Buttongrey
     case ButtonOrange
     case textGrey
+    case GreyScale
+    case dottedGreyScale60
+    case GreyScale40
+    case lightBlue
+    case lightPurple
+    case greyScale30
     
     var color: UIColor {
         switch self {
@@ -89,6 +125,19 @@ enum TrackerizerColorAssests {
             return UIColor(named: "ButtonOrange") ?? .white
         case .textGrey:
             return UIColor(named: "textGrey") ?? .white
+        case .GreyScale:
+            return UIColor(named: "GreyScale") ?? .white
+        case .dottedGreyScale60:
+            return UIColor(named: "dottedGreyScale60") ?? .white
+        case .GreyScale40:
+            return UIColor(named: "GreyScale40") ?? .white
+            
+        case .lightBlue:
+            return UIColor(named: "lightBlue") ?? .white
+        case .lightPurple:
+            return UIColor(named: "lightPurple") ?? .white
+        case .greyScale30:
+            return UIColor(named: "GreyScale30") ?? .white
         }
     }
     

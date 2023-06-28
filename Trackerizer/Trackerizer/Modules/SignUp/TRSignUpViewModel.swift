@@ -17,13 +17,12 @@ class TRSignUpViewModel {
     weak var  delegate: SignUpDelegate?
     func performSignUp(register: RegistrationRequestModel) {
         ApiManager.sharedInstance.callRegisterApiForSignUp(registerRequestModel: register) {data , err in
+            guard let data = data else {return}
             do {
-                let json = try JSONSerialization.jsonObject(with: data!)
-                print(json)
                 let decoder = JSONDecoder()
                 do {
-                    let decodedData = try decoder.decode(RegistrationResponseModel.self, from:data!)
-                    print(decodedData)
+                    let decodedData = try decoder.decode(RegistrationResponseModel.self, from:data)
+//                    print(decodedData)
                     self.delegate?.getSigUpData(data: decodedData)
                     } catch {
                      print("error in decoding")

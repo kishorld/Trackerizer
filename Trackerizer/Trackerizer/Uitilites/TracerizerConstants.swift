@@ -29,4 +29,7 @@ struct TracerizerConstants {
     static let password = "Password"
     static let forgotPassword = "Forgot password"
     static let rememberMe = "Remember me"
+    
+   static let yourSubsCellData = [[TrackerizerImageAssests.spotifyLogo.image,"Spotify","$5.99"],[TrackerizerImageAssests.yTPremiumLogo.image,"YouTube Premium","$18.99"],[TrackerizerImageAssests.oneDriveLogo.image,"Microsoft OneDriv","$29.99"]]
+   static let upcomingCellData = [[TrackerizerImageAssests.date.image,"Spotify","$10.99"],[TrackerizerImageAssests.date.image,"YouTube Premium","$8.99"],[TrackerizerImageAssests.date.image,"Microsoft OneDriv","$99.99"]]
 }

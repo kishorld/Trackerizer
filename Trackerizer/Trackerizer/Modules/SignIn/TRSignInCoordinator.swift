@@ -22,8 +22,10 @@ class TRSignInCoordinator: Coordinator {
     }
     
     func navigateToHomeVc() {
-        let homeVc = TRHomeCoordinator(with: navigationController)
-        homeVc.start()
+//        let homeVc = TRHomeCoordinator(with: navigationController)
+//        homeVc.start()
+        let home = CustomTabBarController()
+        self.navigationController.pushViewController(home, animated: true)
     }
     
     func navigateTpSignUp() {

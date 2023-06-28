@@ -35,6 +35,13 @@ class TRSignUpViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    let activityIndicator : UIActivityIndicatorView = {
+        let  indicator = UIActivityIndicatorView()
+        indicator.transform = CGAffineTransform(scaleX: 3, y: 3)
+        indicator.color = TrackerizerColorAssests.textGrey.color
+        return indicator
+    }()
+    
     let logoView: UIView = {
         let logo = LogoImageView()
         return logo
@@ -160,6 +167,7 @@ class TRSignUpViewController: UIViewController {
     }()
     
     @objc func signUpButtonTapped(sender:UIButton) {
+       
         if let email = emailTextFeild.text, let password = passwordTextFeild.text {
             if email == "" && password == "" {
                 showAlert(title: TRSignUpConstants.alertTitle, message: TRSignUpConstants.emptyEmailAndemptyPassword)
@@ -174,6 +182,7 @@ class TRSignUpViewController: UIViewController {
             } else if !password.isvalidPassword(){
                 showAlert(title: TRSignUpConstants.alertTitle, message: TRSignUpConstants.notValidEmailAndnotValidPassword)
             } else {
+                activityIndicator.startAnimating()
                 guard let email = emailTextFeild.text else {return}
                 guard let password = passwordTextFeild.text else {return}
                 let register = RegistrationRequestModel(email: email, password: password)
@@ -190,6 +199,7 @@ class TRSignUpViewController: UIViewController {
         view.addSubview(bottomButtonStack)
         view.addSubview(signUpButton)
         view.addSubview(progressStack)
+        view.addSubview(activityIndicator)
         view.addSubview(passwordSuggestionlabel)
         emailStackview.addArrangedSubview(emailLabel)
         emailStackview.addArrangedSubview(emailTextFeild)
@@ -206,6 +216,8 @@ class TRSignUpViewController: UIViewController {
     }
         
         func buildConstraints() {
+            activityIndicator.constrain(.centerXAnchor, to: view.centerXAnchor)
+            activityIndicator.constrain(.centerYAnchor, to: view.centerYAnchor)
             logoView.constrain(.centerXAnchor, to: view.centerXAnchor)
             logoView.constrain(.topAnchor,to: view.topAnchor, constant: 60)
             emailAndPasswordStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
@@ -257,18 +269,12 @@ extension TRSignUpViewController: UITextFieldDelegate {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-    
-    func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }
 
 }
 
 extension TRSignUpViewController: SignUpDelegate {
     func getSigUpData(data: RegistrationResponseModel) {
+        activityIndicator.stopAnimating()
         if data.code != nil {
             showAlert(title: TRSignUpConstants.alertTitle, message: data.message ?? "")
         } else {

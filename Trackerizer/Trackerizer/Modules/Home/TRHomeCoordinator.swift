@@ -16,8 +16,8 @@ class TRHomeCoordinator {
     }
     
     func start() {
-        let trHomeVc = TRHomeViewController()
-        trHomeVc.trHomeCoordinator = self
+        let trHomeVc = CustomTabBarController()
+        trHomeVc.coordinator = self
         self.navigationController.pushViewController(trHomeVc, animated: true)
     }
 }

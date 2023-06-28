@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 extension NSString {
     func validPassword() -> Bool {
@@ -29,5 +29,14 @@ extension String {
         let passwordValidation = NSPredicate.init(format: "SELF MATCHES %@", regularExpression)
 
         return passwordValidation.evaluate(with: self)
+    }
+}
+
+extension UIViewController {
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }

@@ -13,5 +13,6 @@ let subDomain = "regnantoffer.backendless.app"
 let baseUrl1 = "https://trackerizer.backendless.app/api/users"
 let baseurl2 = "https://api.backendless.com/\(applicationId)/\(restApiKey)"
 let registraionUrl = "https://gallantants.backendless.app/api/data/Users"
+let signInUrl = "https://gallantants.backendless.app/api/users/login"
 
 

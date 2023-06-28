@@ -19,8 +19,16 @@
 		D8445A412A36F55C008B685C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D8445A402A36F55C008B685C /* Alamofire */; };
 		D8445A472A370641008B685C /* YCoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = D8445A462A370641008B685C /* YCoreUI */; };
 		D8445A492A370A47008B685C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8445A482A370A47008B685C /* Colors.xcassets */; };
+		D84597492A455EAB00D8F04D /* TRSignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84597482A455EAB00D8F04D /* TRSignInModel.swift */; };
+		D845974B2A455F1400D8F04D /* TRSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845974A2A455F1400D8F04D /* TRSignInViewModel.swift */; };
+		D845976F2A45CB9800D8F04D /* CustomCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845976E2A45CB9800D8F04D /* CustomCircularProgressBar.swift */; };
 		D85D9DA82A39AC1600A8B9B1 /* TRSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D9DA72A39AC1500A8B9B1 /* TRSignUpViewController.swift */; };
 		D85D9DAA2A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D9DA92A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift */; };
+		D862D2172A4ADEC4008D0684 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862D2162A4ADEC4008D0684 /* CustomTabBarController.swift */; };
+		D862D2192A4ADFA7008D0684 /* SpendingAndBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862D2182A4ADFA7008D0684 /* SpendingAndBudgetViewController.swift */; };
+		D862D21B2A4ADFE5008D0684 /* CreditCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862D21A2A4ADFE5008D0684 /* CreditCardsViewController.swift */; };
+		D862D21D2A4AE016008D0684 /* TRCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862D21C2A4AE016008D0684 /* TRCalenderViewController.swift */; };
+		D86503592A48115A0078D9D2 /* boxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86503582A48115A0078D9D2 /* boxView.swift */; };
 		D865814E2A3EF4D20041F483 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865814D2A3EF4D20041F483 /* LogoImageView.swift */; };
 		D86581502A3F1C780041F483 /* TRCustomTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865814F2A3F1C780041F483 /* TRCustomTextFeild.swift */; };
 		D884A9502A432BB40003CB3A /* ApiCostannts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884A94F2A432BB40003CB3A /* ApiCostannts.swift */; };
@@ -35,6 +43,9 @@
 		D896EDCA2A4073F000588964 /* TRHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896EDC92A4073F000588964 /* TRHomeCoordinator.swift */; };
 		D89996C42A3718590009FE19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89996C32A3718590009FE19 /* Images.xcassets */; };
 		D89996C62A371E2D0009FE19 /* IOComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89996C52A371E2D0009FE19 /* IOComponent.swift */; };
+		D8C0134A2A4966B200885144 /* TRHomeViewControllerTableViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C013492A4966B200885144 /* TRHomeViewControllerTableViewExtention.swift */; };
+		D8C0134C2A49740D00885144 /* TRHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C0134B2A49740D00885144 /* TRHomeTableViewCell.swift */; };
+		D8C0134E2A49A24500885144 /* TRHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C0134D2A49A24500885144 /* TRHomeViewModel.swift */; };
 		D8C5A3FB2A38499000B06C12 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C5A3E92A38499000B06C12 /* Inter-Bold.otf */; };
 		D8C5A3FC2A38499000B06C12 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C5A3EA2A38499000B06C12 /* Inter-Regular.otf */; };
 		D8C5A3FD2A38499000B06C12 /* Inter-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C5A3EB2A38499000B06C12 /* Inter-SemiBoldItalic.otf */; };
@@ -73,8 +84,16 @@
 		D8445A312A36EB48008B685C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8445A332A36EB48008B685C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8445A482A370A47008B685C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D84597482A455EAB00D8F04D /* TRSignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSignInModel.swift; sourceTree = "<group>"; };
+		D845974A2A455F1400D8F04D /* TRSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSignInViewModel.swift; sourceTree = "<group>"; };
+		D845976E2A45CB9800D8F04D /* CustomCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircularProgressBar.swift; sourceTree = "<group>"; };
 		D85D9DA72A39AC1500A8B9B1 /* TRSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSignUpViewController.swift; sourceTree = "<group>"; };
 		D85D9DA92A39AFAA00A8B9B1 /* TRSignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRSignUpCoordinator.swift; sourceTree = "<group>"; };
+		D862D2162A4ADEC4008D0684 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		D862D2182A4ADFA7008D0684 /* SpendingAndBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingAndBudgetViewController.swift; sourceTree = "<group>"; };
+		D862D21A2A4ADFE5008D0684 /* CreditCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsViewController.swift; sourceTree = "<group>"; };
+		D862D21C2A4AE016008D0684 /* TRCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRCalenderViewController.swift; sourceTree = "<group>"; };
+		D86503582A48115A0078D9D2 /* boxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxView.swift; sourceTree = "<group>"; };
 		D865814D2A3EF4D20041F483 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
 		D865814F2A3F1C780041F483 /* TRCustomTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRCustomTextFeild.swift; sourceTree = "<group>"; };
 		D884A94F2A432BB40003CB3A /* ApiCostannts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCostannts.swift; sourceTree = "<group>"; };
@@ -89,6 +108,9 @@
 		D896EDC92A4073F000588964 /* TRHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRHomeCoordinator.swift; sourceTree = "<group>"; };
 		D89996C32A3718590009FE19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D89996C52A371E2D0009FE19 /* IOComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOComponent.swift; sourceTree = "<group>"; };
+		D8C013492A4966B200885144 /* TRHomeViewControllerTableViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRHomeViewControllerTableViewExtention.swift; sourceTree = "<group>"; };
+		D8C0134B2A49740D00885144 /* TRHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRHomeTableViewCell.swift; sourceTree = "<group>"; };
+		D8C0134D2A49A24500885144 /* TRHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRHomeViewModel.swift; sourceTree = "<group>"; };
 		D8C5A3E92A38499000B06C12 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
 		D8C5A3EA2A38499000B06C12 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		D8C5A3EB2A38499000B06C12 /* Inter-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.otf"; sourceTree = "<group>"; };
@@ -134,6 +156,11 @@
 			children = (
 				D896EDC72A4073BF00588964 /* TRHomeViewController.swift */,
 				D896EDC92A4073F000588964 /* TRHomeCoordinator.swift */,
+				D845976E2A45CB9800D8F04D /* CustomCircularProgressBar.swift */,
+				D86503582A48115A0078D9D2 /* boxView.swift */,
+				D8C013492A4966B200885144 /* TRHomeViewControllerTableViewExtention.swift */,
+				D8C0134B2A49740D00885144 /* TRHomeTableViewCell.swift */,
+				D8C0134D2A49A24500885144 /* TRHomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -143,7 +170,6 @@
 			children = (
 				D8445A212A36EB45008B685C /* Trackerizer */,
 				D8445A202A36EB45008B685C /* Products */,
-				D8445A432A3704D6008B685C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +187,7 @@
 				D884A94E2A432B900003CB3A /* API Manager */,
 				D85D9DAB2A3ADE0100A8B9B1 /* Modules */,
 				D8C5A40D2A38862300B06C12 /* Coordinators */,
+				D89493362A3DFCB000238E18 /* Uitilites */,
 				D8C5A3E82A38499000B06C12 /* inter-cufonfonts */,
 				D8445A222A36EB45008B685C /* AppDelegate.swift */,
 				D8445A242A36EB45008B685C /* SceneDelegate.swift */,
@@ -170,7 +197,6 @@
 				D8445A2B2A36EB45008B685C /* Trackerizer.xcdatamodeld */,
 				D8445A482A370A47008B685C /* Colors.xcassets */,
 				D89996C32A3718590009FE19 /* Images.xcassets */,
-				D89493362A3DFCB000238E18 /* Uitilites */,
 			);
 			path = Trackerizer;
 			sourceTree = "<group>";
@@ -182,13 +208,6 @@
 				D8445A262A36EB45008B685C /* TRWelcomeScreenViewController.swift */,
 			);
 			path = WelcomeScreen;
-			sourceTree = "<group>";
-		};
-		D8445A432A3704D6008B685C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D85D9DA62A39ABED00A8B9B1 /* SignUp */ = {
@@ -206,11 +225,14 @@
 		D85D9DAB2A3ADE0100A8B9B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D89A78602A4C8906001137BE /* Calender */,
+				D89A78612A4C8931001137BE /* Credit cards */,
+				D81F53462A419A850024B6A9 /* Home */,
+				D8C5A4142A388E6B00B06C12 /* Register */,
 				D89493392A3E01CA00238E18 /* SignIn */,
 				D85D9DA62A39ABED00A8B9B1 /* SignUp */,
-				D8C5A4142A388E6B00B06C12 /* Register */,
+				D89A78622A4C8945001137BE /* SpendingAndBudjet */,
 				D8445A422A36F5BB008B685C /* WelcomeScreen */,
-				D81F53462A419A850024B6A9 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -234,6 +256,7 @@
 				D865814D2A3EF4D20041F483 /* LogoImageView.swift */,
 				D865814F2A3F1C780041F483 /* TRCustomTextFeild.swift */,
 				D81F53422A4177BD0024B6A9 /* Extensions.swift */,
+				D862D2162A4ADEC4008D0684 /* CustomTabBarController.swift */,
 			);
 			path = Uitilites;
 			sourceTree = "<group>";
@@ -243,8 +266,34 @@
 			children = (
 				D894933A2A3E01F800238E18 /* TRSignInViewController.swift */,
 				D894933C2A3E024400238E18 /* TRSignInCoordinator.swift */,
+				D84597482A455EAB00D8F04D /* TRSignInModel.swift */,
+				D845974A2A455F1400D8F04D /* TRSignInViewModel.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		D89A78602A4C8906001137BE /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				D862D21C2A4AE016008D0684 /* TRCalenderViewController.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		D89A78612A4C8931001137BE /* Credit cards */ = {
+			isa = PBXGroup;
+			children = (
+				D862D21A2A4ADFE5008D0684 /* CreditCardsViewController.swift */,
+			);
+			path = "Credit cards";
+			sourceTree = "<group>";
+		};
+		D89A78622A4C8945001137BE /* SpendingAndBudjet */ = {
+			isa = PBXGroup;
+			children = (
+				D862D2182A4ADFA7008D0684 /* SpendingAndBudgetViewController.swift */,
+			);
+			path = SpendingAndBudjet;
 			sourceTree = "<group>";
 		};
 		D8C5A3E82A38499000B06C12 /* inter-cufonfonts */ = {
@@ -398,12 +447,14 @@
 				D884A9502A432BB40003CB3A /* ApiCostannts.swift in Sources */,
 				D884A9542A4330E50003CB3A /* SignUpModel.swift in Sources */,
 				D896EDCA2A4073F000588964 /* TRHomeCoordinator.swift in Sources */,
+				D8C0134C2A49740D00885144 /* TRHomeTableViewCell.swift in Sources */,
 				D8C5A4112A38866700B06C12 /* MainCoordinator.swift in Sources */,
 				D89493332A3DBFB300238E18 /* IconCustomButton.swift in Sources */,
 				D894933B2A3E01F800238E18 /* TRSignInViewController.swift in Sources */,
 				D89996C62A371E2D0009FE19 /* IOComponent.swift in Sources */,
 				D896EDC82A4073BF00588964 /* TRHomeViewController.swift in Sources */,
 				D81F53432A4177BD0024B6A9 /* Extensions.swift in Sources */,
+				D845976F2A45CB9800D8F04D /* CustomCircularProgressBar.swift in Sources */,
 				D884A9522A432F7E0003CB3A /* ApiManager.swift in Sources */,
 				D8C5A4162A388E9C00B06C12 /* TRRegisterViewController.swift in Sources */,
 				D86581502A3F1C780041F483 /* TRCustomTextFeild.swift in Sources */,
@@ -411,12 +462,21 @@
 				D8C5A40F2A38863D00B06C12 /* Coordinator.swift in Sources */,
 				D8C5A4182A38922300B06C12 /* TRResiter1Coordinator.swift in Sources */,
 				D8C5A4132A38881C00B06C12 /* TRWelcomeCoordinator.swift in Sources */,
+				D862D2172A4ADEC4008D0684 /* CustomTabBarController.swift in Sources */,
 				D8445A232A36EB45008B685C /* AppDelegate.swift in Sources */,
+				D8C0134A2A4966B200885144 /* TRHomeViewControllerTableViewExtention.swift in Sources */,
+				D862D2192A4ADFA7008D0684 /* SpendingAndBudgetViewController.swift in Sources */,
+				D862D21D2A4AE016008D0684 /* TRCalenderViewController.swift in Sources */,
+				D84597492A455EAB00D8F04D /* TRSignInModel.swift in Sources */,
 				D8445A2D2A36EB45008B685C /* Trackerizer.xcdatamodeld in Sources */,
 				D89493382A3DFCF200238E18 /* TracerizerConstants.swift in Sources */,
 				D89493352A3DF21100238E18 /* TackerizeEnums.swift in Sources */,
 				D865814E2A3EF4D20041F483 /* LogoImageView.swift in Sources */,
+				D845974B2A455F1400D8F04D /* TRSignInViewModel.swift in Sources */,
 				D8445A252A36EB45008B685C /* SceneDelegate.swift in Sources */,
+				D8C0134E2A49A24500885144 /* TRHomeViewModel.swift in Sources */,
+				D86503592A48115A0078D9D2 /* boxView.swift in Sources */,
+				D862D21B2A4ADFE5008D0684 /* CreditCardsViewController.swift in Sources */,
 				D85D9DA82A39AC1600A8B9B1 /* TRSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

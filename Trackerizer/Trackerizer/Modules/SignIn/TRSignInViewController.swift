@@ -11,14 +11,22 @@ class TRSignInViewController: UIViewController {
 
     weak var trSignInCoordinator: TRSignInCoordinator?
     var isButtonSelected = false
+    private let viewModel = TRSignInViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         build()
         emailTextFeild.delegate = self
         passwordTextFeild.delegate = self
-        
+        viewModel.delegate = self
         emailTextFeild.tag = 0
     }
+    
+    let activityIndicator : UIActivityIndicatorView = {
+        let  indicator = UIActivityIndicatorView()
+        indicator.transform = CGAffineTransform(scaleX: 3, y: 3)
+        indicator.color = TrackerizerColorAssests.textGrey.color
+        return indicator
+    }()
     
     let logoView: UIView = {
         let logo = LogoImageView()
@@ -111,8 +119,7 @@ class TRSignInViewController: UIViewController {
         button.layer.shadowOpacity = 1
         button.layer.shadowRadius = 10
         button.layer.shadowOffset = CGSize(width: 0, height: 3)
-        button.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
-//        button.addTarget(self, action: #selector(goToRegister1), for: .touchUpInside)
+        button.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -146,8 +153,11 @@ class TRSignInViewController: UIViewController {
         }
     }
     
-    @objc func goToHome() {
-        trSignInCoordinator?.navigateToHomeVc()
+    @objc func signInButtonTapped() {
+        activityIndicator.startAnimating()
+        guard let email = emailTextFeild.text else {return}
+        guard let password = passwordTextFeild.text else {return}
+        viewModel.performSignIn(signInData: TRSignInRequestModel(login: email, password: password))
     }
     
     @objc func goToSignUp() {
@@ -165,6 +175,7 @@ class TRSignInViewController: UIViewController {
         view.addSubview(emailAndPasswordStack)
         view.addSubview(signAndRemeberStackbuttonStack)
         view.addSubview(bottomButtonStack)
+        view.addSubview(activityIndicator)
         emailStackview.addArrangedSubview(emailLabel)
         emailStackview.addArrangedSubview(emailTextFeild)
         passwordStackview.addArrangedSubview(passwordLabel)
@@ -202,6 +213,8 @@ class TRSignInViewController: UIViewController {
         signUpButton.constrain(.heightAnchor, constant: 48)
         bottomButtonStack.constrain(.bottomAnchor,to: view.bottomAnchor, constant: -30)
         bottomButtonStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 25))
+        activityIndicator.constrain(.centerXAnchor, to: view.centerXAnchor)
+        activityIndicator.constrain(.centerYAnchor, to: view.centerYAnchor)
         
     }
 
@@ -215,8 +228,25 @@ extension TRSignInViewController: UITextFieldDelegate {
            passwordTextFeild.becomeFirstResponder()
         } else if textField == passwordTextFeild {
             passwordTextFeild.resignFirstResponder()
+            signInButtonTapped()
             //TODO :- implement sign in button action if password and email validates
         }
        return true
       }
+}
+
+extension TRSignInViewController: SignInDelegate {
+   
+    func getSigInData(data: TRSignInResponseModel) {
+        activityIndicator.stopAnimating()
+        if data.code != nil {
+            showAlert(title: TRSignUpConstants.alertTitle, message: data.message ?? "")
+        } else {
+            let alert = UIAlertController(title: TRSignUpConstants.alertTitle, message: "Logged In successfully", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                self.trSignInCoordinator?.navigateToHomeVc()
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }

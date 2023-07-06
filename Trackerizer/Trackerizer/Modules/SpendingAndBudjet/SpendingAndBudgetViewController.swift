@@ -11,19 +11,30 @@ class SpendingAndBudgetViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
-        // Do any additional setup after loading the view.
+        build()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    func build() {
+        view.backgroundColor = TrackerizerColorAssests.AppBackGround.color
+        buildHeirarchy()
+        buildConstraints()
     }
-    */
 
+    
+    private let settingButtton: UIButton = {
+        let btn = IOComponent.createCustomButton(image:TrackerizerImageAssests.setting.image)
+        return btn
+    }()
+    
+    func buildHeirarchy() {
+        view.addSubview(settingButtton)
+    }
+    
+    func buildConstraints()  {
+        settingButtton.constrainSize(width: 24, height: 24)
+        settingButtton.constrain(.topAnchor,to: view.topAnchor, constant: 50)
+        settingButtton.constrain(.trailingAnchor,to: view.trailingAnchor, constant: -25)
+    }
 }

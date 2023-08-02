@@ -1274,8 +1274,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "fetchLocalJSONData(forResource:ofType:)"
-            landmarkType = "7">
+            landmarkName = "ApiManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

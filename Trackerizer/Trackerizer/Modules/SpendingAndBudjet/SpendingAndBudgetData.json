@@ -1,0 +1,30 @@
+[
+    {
+        "image": "Auto",
+        "category": "Auto & Transport",
+        "price": "$25.99",
+        "remaining": "$375 left to spend",
+        "total": "of $400",
+        "color": "lightBlue",
+        "percentage": 0.30
+    },
+    {
+        "image": "Entertainment",
+        "category": "Entertainment",
+        "price": "$50.99",
+        "remaining": "$375 left to spend",
+        "total": "of $600",
+        "color": "lightPurple",
+        "percentage": 0.40
+    },
+    {
+        "image": "Security",
+        "category": "Security",
+        "price": "$5.99",
+        "remaining": "$375 left to spend",
+        "total": "of $600",
+        "color": "Color",
+        "percentage": 0.75
+    }
+]
+

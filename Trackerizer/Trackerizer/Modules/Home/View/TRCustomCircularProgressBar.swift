@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomCircularProgressBar: UIView {
+class TRCustomCircularProgressBar: UIView {
     
     private let progressLabel: UILabel = {
         let label = IOComponent.createLabel(text: "$1,234", textColor: TrackerizerColorAssests.ButonWhite.color)

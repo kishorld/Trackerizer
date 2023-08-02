@@ -11,7 +11,7 @@ import YCoreUI
 class TRWelcomeScreenViewController: UIViewController {
     
     weak var trwelcomeCoordinator: TRWelcomeCoordinator?
-//    var childCoordinator: [Coordinator] = []
+    //    var childCoordinator: [Coordinator] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         build()
@@ -24,17 +24,17 @@ class TRWelcomeScreenViewController: UIViewController {
     
     let leadingStyleImage: UIImageView = {
         let image = IOComponent.createImageView(image: TrackerizerImageAssests.leadingStyleIcon.image , contentMode: .scaleAspectFit)
-       return image
+        return image
     }()
     
     let trailingStyleImage: UIImageView = {
         let image = IOComponent.createImageView(image: TrackerizerImageAssests.trailingStyleIcon.image , contentMode: .scaleAspectFill)
-       return image
+        return image
     }()
     
     let iconsImage: UIImageView = {
         let image = IOComponent.createImageView(image: TrackerizerImageAssests.Frameonboarding.image , contentMode: .scaleAspectFit)
-       return image
+        return image
     }()
     
     let buttonStack: UIStackView = {
@@ -48,10 +48,10 @@ class TRWelcomeScreenViewController: UIViewController {
         button.backgroundColor = TrackerizerColorAssests.ButtonOrange.color
         button.layer.cornerRadius = 24
         button.layer.shadowColor = TrackerizerColorAssests.ButtonOrange.color.cgColor
-        button.layer.shadowOpacity = 0.9
+        button.layer.shadowOpacity = 0.3
+        button.layer.masksToBounds = false
         button.layer.shadowRadius = 24
-        button.layer.shadowOffset = CGSize(width: 0, height: 2)
-        button.addTarget(self, action: #selector(goToRegister1), for: .touchUpInside)
+        button.layer.shadowOffset = CGSize(width: 0, height: 10)
         return button
     }()
     
@@ -70,7 +70,7 @@ class TRWelcomeScreenViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
-
+    
     
     func build() {
         initialSetup()
@@ -78,8 +78,11 @@ class TRWelcomeScreenViewController: UIViewController {
         buildConstraints()
     }
     
+    
+    
     func initialSetup() {
         view.backgroundColor = TrackerizerColorAssests.AppBackGround.color
+        getStartedButton.addTarget(self, action: #selector(goToRegister1), for: .touchUpInside)
     }
     func buildConstraints() {
         buildLogoConstraints()
@@ -100,9 +103,9 @@ class TRWelcomeScreenViewController: UIViewController {
         
     }
     
-   func buildLogoConstraints() {
-       logoView.constrain(.centerXAnchor, to: view.centerXAnchor)
-       logoView.constrain(.topAnchor, to: view.topAnchor,constant: 60)
+    func buildLogoConstraints() {
+        logoView.constrain(.centerXAnchor, to: view.centerXAnchor)
+        logoView.constrain(.topAnchor, to: view.topAnchor,constant: 60)
     }
     
     func buildEdgeStyleConstrains() {
@@ -145,4 +148,22 @@ class TRWelcomeScreenViewController: UIViewController {
     
 }
 
-
+////
+//extension UIButton {
+//    func letsAttributes() {
+//        self.layer.cornerRadius = 24
+//        self.layer.shadowColor = TrackerizerColorAssests.ButtonOrange.color.cgColor
+//        self.layer.shadowOpacity = 0.3
+////        self.layer.shadowRadius = 24
+//        self.layer.shadowOffset = CGSize(width: 0, height: 4)
+////        self.layer.borderWidth = 1.0
+//        self.layer.cornerRadius = 24
+//        self.layer.shadowColor = UIColor(named: "Color")?.cgColor
+//        self.layer.shadowOffset = CGSize(width: 0, height: 10)
+//
+////        self.layer.shadowOpacity = 0.1
+////        self.layer.shadowRadius = 100
+//        self.layer.masksToBounds = false
+//
+//    }
+//}

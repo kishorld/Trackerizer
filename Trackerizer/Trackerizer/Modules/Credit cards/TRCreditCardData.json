@@ -1,0 +1,32 @@
+[
+    {
+        "name": "virat kohli",
+        "birthday": "07/26",
+        "creditCard": "**** **** **** 1818"
+    },
+    {
+        "name": "jhon dean",
+        "birthday": "09/24",
+        "creditCard": "**** **** **** 9895"
+    },
+    {
+        "name": "KL Rahul",
+        "birthday": "08/24",
+        "creditCard": "**** **** **** 3699"
+    },
+    {
+        "name": "MS Dhoni",
+        "birthday": "09/27",
+        "creditCard": "**** **** **** 0707"
+    },
+    {
+        "name": "Rohit sharma",
+        "birthday": "09/29",
+        "creditCard": "**** **** **** 4545"
+    },
+    {
+        "name": "jhon cena",
+        "birthday": "09/30",
+        "creditCard": "**** **** **** 3030"
+    }
+]

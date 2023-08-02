@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            mainncoordinator = MainCoordinator(with: navigationController)
 //            mainncoordinator?.start()
             mainncoordinator = TRHomeCoordinator(with: navigationController)
-        mainncoordinator?.start()
+            mainncoordinator?.start()
             window = UIWindow(windowScene: windowScene)
             window?.rootViewController = navigationController
             window?.makeKeyAndVisible()

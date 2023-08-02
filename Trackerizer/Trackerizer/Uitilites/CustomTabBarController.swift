@@ -54,8 +54,8 @@ class CustomTabBarController: UITabBarController {
     func addSomeTabItems() {
         let vc1 = UINavigationController(rootViewController: TRHomeViewController())
         let vc3 = UINavigationController(rootViewController: TRCalenderViewController())
-        let vc2 = UINavigationController(rootViewController: SpendingAndBudgetViewController())
-        let vc4  = UINavigationController(rootViewController: CreditCardsViewController())
+        let vc2 = UINavigationController(rootViewController: TRSpendingAndBudgetViewController())
+        let vc4  = UINavigationController(rootViewController: TRCreditCardsViewController())
         setViewControllers([vc1, vc2, vc3, vc4], animated: false)
         guard let items = tabBar.items else { return}
         items[0].image = TrackerizerImageAssests.home.image
@@ -109,6 +109,8 @@ class CustomtabBar: UITabBar {
     
     override func layoutSubviews() {
                 super.layoutSubviews()
+        barTintColor = .clear
+        backgroundColor = .clear
         tintColor =  TrackerizerColorAssests.ButonWhite.color
         unselectedItemTintColor = TrackerizerColorAssests.greyScale30.color
                 addSubview(btnMiddle)

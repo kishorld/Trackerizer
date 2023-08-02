@@ -15,6 +15,8 @@ class TRHomeViewController: UIViewController {
     var circularViewDuration: TimeInterval = 1
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.fecthHomeData()
+        self.navigationController?.isNavigationBarHidden = true
         build()
         tableView.reloadData()
         tableView.register(TRHomeTableViewCell.self, forCellReuseIdentifier: "HomeCell")
@@ -46,8 +48,8 @@ class TRHomeViewController: UIViewController {
         table.dataSource = self
         return table
     }()
-
-    private let circularProgreessView = CustomCircularProgressBar()
+    
+    private let circularProgreessView = TRCustomCircularProgressBar()
     private let containerView: UIView = {
         let containerview = UIView()
         containerview.backgroundColor = TrackerizerColorAssests.GreyScale.color
@@ -98,8 +100,6 @@ class TRHomeViewController: UIViewController {
         segment.addTarget(self, action: #selector(segmentTapped), for: .valueChanged)
         return segment
     }()
-    
-//    private var sliderView: UIView!
     
     @objc func segmentTapped(_ sender: UISegmentedControl) {
         

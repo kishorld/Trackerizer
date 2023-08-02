@@ -31,5 +31,8 @@ struct TracerizerConstants {
     static let rememberMe = "Remember me"
     
    static let yourSubsCellData = [[TrackerizerImageAssests.spotifyLogo.image,"Spotify","$5.99"],[TrackerizerImageAssests.yTPremiumLogo.image,"YouTube Premium","$18.99"],[TrackerizerImageAssests.oneDriveLogo.image,"Microsoft OneDriv","$29.99"]]
-   static let upcomingCellData = [[TrackerizerImageAssests.date.image,"Spotify","$10.99"],[TrackerizerImageAssests.date.image,"YouTube Premium","$8.99"],[TrackerizerImageAssests.date.image,"Microsoft OneDriv","$99.99"]]
+   static let upcomingCellData = [[TrackerizerImageAssests.date.image,"Spotify","$10.99"],[TrackerizerImageAssests.date.image,"YouTube Premium","$8.99"],[TrackerizerImageAssests.date.image,"Microsoft OneDrive","$99.99"]]
+    static var calendarData: [[String]] = [["Monday", "1"], ["Tuesday", "2"], ["Wednesday", "3"], ["Thursday", "4"], ["Friday", "5"], ["Saturday", "6"], ["Sunday", "7"], ["Monday", "8"], ["Tuesday", "9"], ["Wednesday", "10"], ["Thursday", "11"], ["Friday", "12"], ["Saturday", "13"], ["Sunday", "14"], ["Monday", "15"], ["Tuesday", "16"], ["Wednesday", "17"], ["Thursday", "18"], ["Friday", "19"], ["Saturday", "20"], ["Sunday", "21"], ["Monday", "22"], ["Tuesday", "23"], ["Wednesday", "24"], ["Thursday", "25"], ["Friday", "26"], ["Saturday", "27"], ["Sunday", "28"], ["Monday", "29"], ["Tuesday", "30"], ["Wednesday", "31"]]
+    
+    static var months: [String] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 }

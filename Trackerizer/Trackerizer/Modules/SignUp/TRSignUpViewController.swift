@@ -9,18 +9,48 @@ import UIKit
 
 class TRSignUpViewController: UIViewController {
     
-    
+    var firstLine  : LineView!
+    var secondLine : LineView!
+    var thirdLine  : LineView!
+    var fourthLine : LineView!
     weak var trSignUpCoordinator: TRSignUpCoordinator?
     private let viewModel  = TRSignUpViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        designPasswordAnimation()
         view.backgroundColor = .red
         self.navigationController?.isNavigationBarHidden = true
         emailTextFeild.delegate = self
         passwordTextFeild.delegate = self
         viewModel.delegate = self
         build()
+        
     }
+    
+    func designPasswordAnimation() {
+        let lineViewWidth = (view.frame.width - 88 ) / 4
+        print(lineViewWidth)
+        firstLine = LineView(width: lineViewWidth, progressColor: .red)
+        secondLine = LineView(width: lineViewWidth, progressColor: .yellow)
+        thirdLine = LineView(width: lineViewWidth, progressColor: .orange)
+        fourthLine = LineView(width: lineViewWidth, progressColor: .green)
+        view.backgroundColor = .white
+        super.viewDidLoad()
+        view.addSubview(progressStack)
+        progressStack.addArrangedSubview(firstLine)
+        progressStack.addArrangedSubview(secondLine)
+        progressStack.addArrangedSubview(thirdLine)
+        progressStack.addArrangedSubview(fourthLine)
+        firstLine.constrainSize(width: lineViewWidth, height: 5)
+        secondLine.constrainSize(width: lineViewWidth, height: 5)
+        thirdLine.constrainSize(width: lineViewWidth, height: 5)
+        fourthLine.constrainSize(width: lineViewWidth, height: 5)
+    }
+    
+    private let progressStack: UIStackView = {
+        let stack = IOComponent.createStackView(axis: .horizontal, distribution: .fillEqually, alignment: .fill, spacing: 10)
+        return stack
+    }()
     
     func build() {
         view.backgroundColor = TrackerizerColorAssests.AppBackGround.color
@@ -121,44 +151,44 @@ class TRSignUpViewController: UIViewController {
         return button
     }()
     
-    let firstProgressView: UIView = {
-        let  view = UIView()
-        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
-        view.constrain(.heightAnchor, constant: 5)
-        view.clipsToBounds = true
-        view.layer.cornerRadius = 2.5
-        view.layer.maskedCorners = [.layerMinXMinYCorner,.layerMinXMaxYCorner]
-        return view
-    }()
-    
-    let secondProgressView: UIView = {
-        let  view = UIView()
-        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
-        view.constrain(.heightAnchor, constant: 5)
-        return view
-    }()
-    
-    let thirdProgressView: UIView = {
-        let  view = UIView()
-        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
-        view.constrain(.heightAnchor, constant: 5)
-        return view
-    }()
-    
-    let fourthProgressView: UIView = {
-        let  view = UIView()
-        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
-        view.constrain(.heightAnchor, constant: 5)
-        view.clipsToBounds = true
-        view.layer.cornerRadius = 2.5
-        view.layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner]
-        return view
-    }()
-    
-    let progressStack: UIStackView = {
-        let stack = IOComponent.createStackView(axis: .horizontal, distribution: .fillEqually, alignment: .fill, spacing: 5)
-        return stack
-    }()
+    //    let firstProgressView: UIView = {
+    //        let  view = UIView()
+    //        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
+    //        view.constrain(.heightAnchor, constant: 5)
+    //        view.clipsToBounds = true
+    //        view.layer.cornerRadius = 2.5
+    //        view.layer.maskedCorners = [.layerMinXMinYCorner,.layerMinXMaxYCorner]
+    //        return view
+    //    }()
+    //
+    //    let secondProgressView: UIView = {
+    //        let  view = UIView()
+    //        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
+    //        view.constrain(.heightAnchor, constant: 5)
+    //        return view
+    //    }()
+    //
+    //    let thirdProgressView: UIView = {
+    //        let  view = UIView()
+    //        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
+    //        view.constrain(.heightAnchor, constant: 5)
+    //        return view
+    //    }()
+    //
+    //    let fourthProgressView: UIView = {
+    //        let  view = UIView()
+    //        view.backgroundColor = TrackerizerColorAssests.Buttongrey.color
+    //        view.constrain(.heightAnchor, constant: 5)
+    //        view.clipsToBounds = true
+    //        view.layer.cornerRadius = 2.5
+    //        view.layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner]
+    //        return view
+    //    }()
+    //
+    //    let progressStack: UIStackView = {
+    //        let stack = IOComponent.createStackView(axis: .horizontal, distribution: .fillEqually, alignment: .fill, spacing: 5)
+    //        return stack
+    //    }()
     
     let passwordSuggestionlabel: UILabel = {
         let label = IOComponent.createLabel(text: TracerizerConstants.passwordSugesstionLabel, textColor: TrackerizerColorAssests.textGrey.color)
@@ -167,7 +197,7 @@ class TRSignUpViewController: UIViewController {
     }()
     
     @objc func signUpButtonTapped(sender:UIButton) {
-       
+        
         if let email = emailTextFeild.text, let password = passwordTextFeild.text {
             if email == "" && password == "" {
                 showAlert(title: TRSignUpConstants.alertTitle, message: TRSignUpConstants.emptyEmailAndemptyPassword)
@@ -209,46 +239,53 @@ class TRSignUpViewController: UIViewController {
         emailAndPasswordStack.addArrangedSubview(passwordStackview)
         bottomButtonStack.addArrangedSubview(dontHaveAccount)
         bottomButtonStack.addArrangedSubview(signInButton)
-        progressStack.addArrangedSubview(firstProgressView)
-        progressStack.addArrangedSubview(secondProgressView)
-        progressStack.addArrangedSubview(thirdProgressView)
-        progressStack.addArrangedSubview(fourthProgressView)
     }
-        
-        func buildConstraints() {
-            activityIndicator.constrain(.centerXAnchor, to: view.centerXAnchor)
-            activityIndicator.constrain(.centerYAnchor, to: view.centerYAnchor)
-            logoView.constrain(.centerXAnchor, to: view.centerXAnchor)
-            logoView.constrain(.topAnchor,to: view.topAnchor, constant: 60)
-            emailAndPasswordStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
-            emailAndPasswordStack.constrain(.topAnchor,to: logoView.bottomAnchor, constant: view.frame.height * 0.17)
-            emailTextFeild.constrain(.heightAnchor, constant: 48)
-            emailLabel.constrain(.heightAnchor, constant: 16)
-            passwordTextFeild.constrain(.heightAnchor, constant: 48)
-            passwordLabel.constrain(.heightAnchor, constant: 16)
-            dontHaveAccount.constrain(.heightAnchor, constant: 20)
-            signInButton.constrain(.heightAnchor, constant: 48)
-            bottomButtonStack.constrain(.bottomAnchor,to: view.bottomAnchor, constant: -30)
-            bottomButtonStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 25))
-            progressStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
-            progressStack.constrain(below: emailAndPasswordStack, offset: 20)
-            passwordSuggestionlabel.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
-            passwordSuggestionlabel.constrain(below: progressStack, offset: 16)
-            signUpButton.constrain(.heightAnchor, constant: 48)
-            signUpButton.constrain(below: passwordSuggestionlabel,offset: 40)
-            signUpButton.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
-        }
+    
+    func buildConstraints() {
+        activityIndicator.constrain(.centerXAnchor, to: view.centerXAnchor)
+        activityIndicator.constrain(.centerYAnchor, to: view.centerYAnchor)
+        logoView.constrain(.centerXAnchor, to: view.centerXAnchor)
+        logoView.constrain(.topAnchor,to: view.topAnchor, constant: 60)
+        emailAndPasswordStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
+        emailAndPasswordStack.constrain(.topAnchor,to: logoView.bottomAnchor, constant: view.frame.height * 0.17)
+        emailTextFeild.constrain(.heightAnchor, constant: 48)
+        emailLabel.constrain(.heightAnchor, constant: 16)
+        passwordTextFeild.constrain(.heightAnchor, constant: 48)
+        passwordLabel.constrain(.heightAnchor, constant: 16)
+        dontHaveAccount.constrain(.heightAnchor, constant: 20)
+        signInButton.constrain(.heightAnchor, constant: 48)
+        bottomButtonStack.constrain(.bottomAnchor,to: view.bottomAnchor, constant: -30)
+        bottomButtonStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 25))
+        progressStack.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
+        progressStack.constrain(below: emailAndPasswordStack, offset: 20)
+        passwordSuggestionlabel.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
+        passwordSuggestionlabel.constrain(below: progressStack, offset: 16)
+        signUpButton.constrain(.heightAnchor, constant: 48)
+        signUpButton.constrain(below: passwordSuggestionlabel,offset: 40)
+        signUpButton.constrainEdges(.horizontal, with: .init(leadingAndTrailing: 24))
+    }
     @objc func goToSignUp() {
         trSignUpCoordinator?.navigateToSignIn()
     }
 }
 
 extension TRSignUpViewController: UITextFieldDelegate {
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentString: NSString = textField.text! as NSString
-        let password: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        //        let currentString: NSString = textField.text! as NSString
+        //        let password: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
         if textField == passwordTextFeild {
-            viewModel.validatePasswordAnimation(firstProgressView: firstProgressView, secondProgressView: secondProgressView, thirdProgressView: thirdProgressView, fourthProgressView: fourthProgressView, password: password, passwordLength: password.length)
+            if let currentText = textField.text {
+                var updatedText = currentText
+                updatedText.replaceSubrange(Range(range, in: currentText)!, with: string)
+                if updatedText.count > currentText.count {
+                    viewModel.validatePasswordForwardAnimation(firstProgressView: firstLine, secondProgressView: secondLine, thirdProgressView: thirdLine, fourthProgressView: fourthLine, password: updatedText as NSString, passwordLength: updatedText.count)
+                } else {
+                    print(updatedText)
+                    viewModel.validatePasswordBackwardAnimation(firstProgressView: firstLine, secondProgressView: secondLine, thirdProgressView: thirdLine, fourthProgressView: fourthLine, password: updatedText as NSString, passwordLength: updatedText.count)
+                }
+            }
+            
         }
         return true
     }
@@ -256,8 +293,8 @@ extension TRSignUpViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == emailTextFeild {
-           emailTextFeild.resignFirstResponder()
-           passwordTextFeild.becomeFirstResponder()
+            emailTextFeild.resignFirstResponder()
+            passwordTextFeild.becomeFirstResponder()
         } else if textField == passwordTextFeild {
             passwordTextFeild.resignFirstResponder()
             signUpButtonTapped(sender: signUpButton)
@@ -269,7 +306,7 @@ extension TRSignUpViewController: UITextFieldDelegate {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    
 }
 
 extension TRSignUpViewController: SignUpDelegate {

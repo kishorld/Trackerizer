@@ -28,10 +28,21 @@ enum TrackerizerImageAssests {
     case spending
     case cards
     case setting
+    case Group
+    case add
+    case auto
+    case entertainment
+    case security
+    case chip
+    case masterCardLogo
+    case netfilx
+    case Ellipse1
+    case Ellipse2
+    
     
     var image: UIImage {
         switch self {
-        case .appleIcon: return UIImage(named: "appleIcon")!
+        case .appleIcon: return UIImage(named: "appleIcon") ?? .add
         case .facebookIcon:
             return UIImage(named: "facebookIcon") ?? .add
         case .googleIcon:
@@ -41,9 +52,9 @@ enum TrackerizerImageAssests {
         case .logopart2Icon:
             return UIImage(named: "logoPart2") ?? .add
         case .leadingStyleIcon:
-            return UIImage(named: "leadingImage") ?? .add
+            return UIImage(named: "lleadingImage") ?? .add
         case .trailingStyleIcon:
-            return UIImage(named: "trailingImage") ?? .add
+            return UIImage(named: "trailing") ?? .add
         case .Frameonboarding:
             return UIImage(named: "Frameonboarding") ?? .add
         case .checkMark:
@@ -68,6 +79,29 @@ enum TrackerizerImageAssests {
             return UIImage(named: "creditCards") ?? .add
         case .setting:
             return UIImage(named: "Settings") ?? .add
+        case .Group:
+            return UIImage(named: "Group") ?? .add
+        case .add:
+            return UIImage(named: "Add") ?? .add
+        case .auto:
+            return UIImage(named: "Auto") ?? .add
+        case .entertainment:
+            return UIImage(named: "Entertainment") ?? .add
+        case .security:
+            return UIImage(named: "Security") ?? .add
+        case .chip:
+            return UIImage(named: "chip") ?? .add
+        case .masterCardLogo:
+            return UIImage(named: "MasterCardLogo") ?? .add
+        case .netfilx:
+            return UIImage(named: "netfilx") ?? .add
+        case .Ellipse1:
+            guard let image = UIImage(named: "Ellipse1") else {
+                    fatalError()
+                }
+                return image
+        case .Ellipse2:
+            return UIImage(named: "Ellipse2") ?? .add
         }
     }
 }
@@ -107,6 +141,8 @@ enum TrackerizerColorAssests {
     case lightBlue
     case lightPurple
     case greyScale30
+    case greyScale50
+    case cardColor
     
     var color: UIColor {
         switch self {
@@ -138,6 +174,10 @@ enum TrackerizerColorAssests {
             return UIColor(named: "lightPurple") ?? .white
         case .greyScale30:
             return UIColor(named: "GreyScale30") ?? .white
+        case .greyScale50:
+            return UIColor(named: "GreyScale50") ?? .white
+        case .cardColor:
+            return UIColor(named: "cardColor") ?? .white
         }
     }
     

@@ -57,8 +57,8 @@ class TRHomeTableViewCell: UITableViewCell {
         return label
     }()
     
-    func configure(data: UIImage, iconText: String, iconCost: String) {
-        IconImage.image = data
+    func configure(image: String, iconText: String, iconCost: String) {
+        IconImage.image = UIImage(named: image)
         IconLabel.text = iconText
         IconCostLabel.text = iconCost
     }

@@ -90,7 +90,7 @@ enum TrackerizerImageAssests {
         case .security:
             return UIImage(named: "Security") ?? .add
         case .chip:
-            return UIImage(named: "chip") ?? .add
+            return UIImage(named: "Chip") ?? .add
         case .masterCardLogo:
             return UIImage(named: "MasterCardLogo") ?? .add
         case .netfilx:

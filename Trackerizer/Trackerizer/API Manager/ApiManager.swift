@@ -26,36 +26,6 @@ class ApiManager {
         }
     }
 
-//    func callRegisterApiForSignUp(registerRequestModel: RegistrationRequestModel, completionHandler: @escaping (Data?, Error?) -> Void) {
-//        let header: HTTPHeaders = [.contentType("application/json")]
-//        print(registraionUrl)
-//        AF.request(registraionUrl, method: .post, parameters: registerRequestModel, encoder: JSONParameterEncoder.default, headers: header).response {
-//            response in
-//            switch response.result {
-//            case.success(let data):
-//                completionHandler(data, nil)
-//            case .failure(let err):
-//                completionHandler(nil, err)
-//                print(err.localizedDescription)
-//            }
-//        }
-////    }
-////
-//    func callSignInApi(signinRequestModel: TRSignInRequestModel, completionHandler: @escaping (Data?, Error?) -> Void) {
-//        let header: HTTPHeaders = [.contentType("application/json")]
-//        print(signInUrl)
-//        AF.request(signInUrl,method: .post, parameters: signinRequestModel, encoder: JSONParameterEncoder.default,headers: header).response {
-//            response in
-//            switch response.result  {
-//            case.success(let data):
-//                completionHandler(data, nil)
-//            case .failure(let err):
-//                print()
-//                completionHandler(nil, err)
-//            }
-//        }
-//    }
-    
     
     func fetchLocalJSONData<T: Decodable>(forResource fileName: String, ofType fileType: String) -> [T]? {
         guard let url = Bundle.main.url(forResource: fileName, withExtension: fileType) else {

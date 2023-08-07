@@ -39,8 +39,9 @@ class CustomSpendingProgressBar: UIView {
         addProgressLayer(pathCcolor: TrackerizerColorAssests.ButtonOrange.color.cgColor, startingPoint:  0.15, endingPoint: 0.35, circularPath: circularPath)
         addProgressLayer(pathCcolor: TrackerizerColorAssests.lightPurple.color.cgColor, startingPoint:  0.40, endingPoint:  0.7, circularPath: circularPath)
     }
-    let progressLayer = CAShapeLayer()
+    
     func addProgressLayer(pathCcolor: CGColor, startingPoint: CGFloat, endingPoint: CGFloat, circularPath: UIBezierPath) {
+        let progressLayer = CAShapeLayer()
         progressLayer.path = circularPath.cgPath
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.lineCap = .round
@@ -84,17 +85,6 @@ class CustomSpendingProgressBar: UIView {
         stackview.addArrangedSubview(descriptionLabel)
         stackview.constrain(.centerXAnchor, to: self.centerXAnchor)
         stackview.constrain(.topAnchor,to: topAnchor, constant: -50)
-    }
-    
-    func progressAnimation(duration: TimeInterval) {
-        // created circularProgressAnimation with keyPath
-        let circularProgressAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        // set the end time
-        circularProgressAnimation.duration = duration
-        circularProgressAnimation.toValue = 1
-        circularProgressAnimation.fillMode = .forwards
-        circularProgressAnimation.isRemovedOnCompletion = false
-//        progressLayer.add(circularProgressAnimation, forKey: "progressAnim")
     }
 
 }

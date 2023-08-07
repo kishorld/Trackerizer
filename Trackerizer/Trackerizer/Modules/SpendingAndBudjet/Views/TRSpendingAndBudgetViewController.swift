@@ -14,7 +14,6 @@ class TRSpendingAndBudgetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.getSpendingAndBudgetData()
-        circularProgreessView.progressAnimation(duration: 1)
         self.navigationController?.isNavigationBarHidden = true
         build()
         circularProgreessView.backgroundColor = .red

@@ -216,7 +216,14 @@ class TRSignUpViewController: UIViewController {
                 guard let email = emailTextFeild.text else {return}
                 guard let password = passwordTextFeild.text else {return}
                 let register = RegistrationRequestModel(email: email, password: password)
-                viewModel.performSignUp(register: register)
+//                viewModel.performSignUp(register: register)
+                // commented the above line for not having backend. bypassing singnUP
+                let alert = UIAlertController(title: TRSignUpConstants.alertTitle, message: TRSignUpConstants.registrationSuccessfull, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                    self.trSignUpCoordinator?.navigateToSignIn()
+                }))
+                self.trSignUpCoordinator?.navigateToSignIn()
+                
             }
         } else{
             return

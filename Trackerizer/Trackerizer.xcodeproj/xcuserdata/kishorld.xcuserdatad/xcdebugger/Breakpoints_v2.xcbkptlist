@@ -98,68 +98,6 @@
             endingLineNumber = "61"
             landmarkName = "faceBookSignUpButton"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "37B781DF-BC96-4ED9-BAB7-9563B8F1695D - 6c6f07ef54bb7c1f"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; __C.UIButton in variable initialization expression of Trackerizer.TRRegister1ViewController.faceBookSignUpButton : __C.UIButton"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register1/TRRegister1ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  uuid = "37B781DF-BC96-4ED9-BAB7-9563B8F1695D - c67f2597358015e3"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRRegister1ViewController.faceBookSignUpButton.getter : __C.UIButton"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register1/TRRegister1ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "49">
-               </Location>
-               <Location
-                  uuid = "37B781DF-BC96-4ED9-BAB7-9563B8F1695D - ac18de3fad832168"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRRegister1ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Trackerizer.TRRegister1ViewController"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register1/TRRegister1ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "604">
-               </Location>
-               <Location
-                  uuid = "37B781DF-BC96-4ED9-BAB7-9563B8F1695D - e67709ad58345c57"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRRegister1ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Trackerizer.TRRegister1ViewController&gt;"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register1/TRRegister1ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "546">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -208,68 +146,6 @@
             endingLineNumber = "58"
             landmarkName = "signUpWithEmailButton"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "AABE158F-5273-491A-84E6-10F2834A48B4 - 10469dcda2153e6b"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; __C.UIButton in variable initialization expression of Trackerizer.TRRegisterViewController.signUpWithEmailButton : __C.UIButton"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register/TRRegisterViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "29">
-               </Location>
-               <Location
-                  uuid = "AABE158F-5273-491A-84E6-10F2834A48B4 - 70954e6837446aa8"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRRegisterViewController.signUpWithEmailButton.getter : __C.UIButton"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register/TRRegisterViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "49">
-               </Location>
-               <Location
-                  uuid = "AABE158F-5273-491A-84E6-10F2834A48B4 - 25c11bce9d0a2b13"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRRegisterViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Trackerizer.TRRegisterViewController"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register/TRRegisterViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "535">
-               </Location>
-               <Location
-                  uuid = "AABE158F-5273-491A-84E6-10F2834A48B4 - d19fd59327ae6057"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRRegisterViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Trackerizer.TRRegisterViewController&gt;"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/Register/TRRegisterViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "477">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -302,68 +178,6 @@
             endingLineNumber = "45"
             landmarkName = "getStartedButton"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "72C43C3A-38BA-4DD4-900D-F4A9BB0483AA - 2b773589ad129379"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; __C.UIButton in variable initialization expression of Trackerizer.TRWelcomeScreenViewController.getStartedButton : __C.UIButton"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/WelcomeScreen/TRWelcomeScreenViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "29">
-               </Location>
-               <Location
-                  uuid = "72C43C3A-38BA-4DD4-900D-F4A9BB0483AA - 9cb2f69cac4a659c"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRWelcomeScreenViewController.getStartedButton.getter : __C.UIButton"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/WelcomeScreen/TRWelcomeScreenViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "49">
-               </Location>
-               <Location
-                  uuid = "72C43C3A-38BA-4DD4-900D-F4A9BB0483AA - f5af4053ded15ab8"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRWelcomeScreenViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Trackerizer.TRWelcomeScreenViewController"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/WelcomeScreen/TRWelcomeScreenViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "501">
-               </Location>
-               <Location
-                  uuid = "72C43C3A-38BA-4DD4-900D-F4A9BB0483AA - ccdb25b81b170ff6"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRWelcomeScreenViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Trackerizer.TRWelcomeScreenViewController&gt;"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/Desktop/trackerizer/Trackerizer/Trackerizer/Modules/WelcomeScreen/TRWelcomeScreenViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "443">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -376,8 +190,8 @@
             filePath = "Trackerizer/Modules/SignUp/TRSignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
             landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -424,8 +238,8 @@
             filePath = "Trackerizer/Modules/SignUp/TRSignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "313"
-            endingLineNumber = "313"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
             landmarkName = "getSigUpData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -440,8 +254,8 @@
             filePath = "Trackerizer/Modules/SignUp/TRSignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "315"
-            endingLineNumber = "315"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
             landmarkName = "getSigUpData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -456,8 +270,8 @@
             filePath = "Trackerizer/Modules/SignUp/TRSignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "goToSignUp()"
             landmarkType = "7">
          </BreakpointContent>
@@ -504,8 +318,8 @@
             filePath = "Trackerizer/Modules/SignIn/TRSignInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
             landmarkName = "getSigInData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -520,8 +334,8 @@
             filePath = "Trackerizer/Modules/SignIn/TRSignInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "getSigInData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -536,8 +350,8 @@
             filePath = "Trackerizer/Modules/SignIn/TRSignInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "getSigInData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -552,8 +366,8 @@
             filePath = "Trackerizer/Modules/SignIn/TRSignInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
             landmarkName = "getSigInData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -860,38 +674,6 @@
             endingLineNumber = "12"
             landmarkName = "init(frame:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4B8654F0-AA3F-4300-A47B-F59231497C78 - 8db4d609f58087eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRDateDayCollectionViewCell.__allocating_init(frame: __C.CGRect) -&gt; Trackerizer.TRDateDayCollectionViewCell"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/trackerizer/Trackerizer/Trackerizer/Modules/Calender/TRDateDayCollectionViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "31">
-               </Location>
-               <Location
-                  uuid = "4B8654F0-AA3F-4300-A47B-F59231497C78 - 8d86bf7b20ca3693"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Trackerizer.TRDateDayCollectionViewCell.init(frame: __C.CGRect) -&gt; Trackerizer.TRDateDayCollectionViewCell"
-                  moduleName = "Trackerizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kishorld/trackerizer/Trackerizer/Trackerizer/Modules/Calender/TRDateDayCollectionViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "126">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1195,6 +977,22 @@
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "init(width:Height:noOfcards:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82B47DD5-3B36-4E53-8651-4B51275F2465"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Trackerizer/Modules/SignUp/TRSignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "signUpButtonTapped(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

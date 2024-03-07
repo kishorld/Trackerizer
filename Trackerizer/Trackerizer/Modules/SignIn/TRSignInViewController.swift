@@ -155,9 +155,11 @@ class TRSignInViewController: UIViewController {
     
     @objc func signInButtonTapped() {
         activityIndicator.startAnimating()
+        self.trSignInCoordinator?.navigateToHomeVc()
         guard let email = emailTextFeild.text else {return}
         guard let password = passwordTextFeild.text else {return}
-        viewModel.performSignIn(signInData: TRSignInRequestModel(login: email, password: password))
+//        viewModel.performSignIn(signInData: TRSignInRequestModel(login: email, password: password))
+    // commented the above line for not having backend. bypassing singn in
     }
     
     @objc func goToSignUp() {

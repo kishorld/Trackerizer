@@ -16,3 +16,14 @@ Main Highlight in the app is CreditCard Stack
 Finally I have created CustomTab bar which has diffrent shape using UIBezierPath
 
 
+Here is the Animation Video Password checker
+
+
+Uploading Password.mp4…
+Here is the Card Animation Video
+
+
+https://github.com/kishorld/Trackerizer/assets/47823433/e8d74582-de4c-4f4f-b3b8-7babf4f499ec
+Here Is the full App Viedo
+
+
